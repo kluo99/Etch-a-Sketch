@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: block;
+    float: left;
+}
+
+.box {
+    display: block; 
+    width:2px; 
+    height:2px; 
+    border: 2px solid black; 
+    padding: 10px; 
+    margin: 0px;
+}
