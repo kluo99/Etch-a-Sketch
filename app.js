@@ -1,30 +1,29 @@
 const gridContainer = document.querySelector('#container');
 
 
-// creates a column of 16 squares
-function createRow(){
+//creates a column of 16 squares
+function createColumn(){
     for (let i = 0; i < 16; i++) {
-        const column = document.createElement('div');
+        let column = document.createElement('div');
         column.className = "column";
         for (let j = 0; i < 16; i++){
-            const box = document.createElement('div');
+            let box = document.createElement('div');
+            document.querySelectorAll('box');
             box.className = "box";
+            box.addEventListener("mouseover", function() {
+                box.style.background = 'red';
+            })
             column.appendChild(box);
         }
         gridContainer.appendChild(column);
     }
 }
 
-
-//gridContainer.setAttribute('style', 'display: flex; align-items: center; justify-content: center;flex-direction: row');
+// creates the grid
 function createGrid(){
     for (let i = 0; i < 16; i++) {
-        createRow();
+        createColumn();
     }
 }
 
-
 createGrid();
-
-
-
