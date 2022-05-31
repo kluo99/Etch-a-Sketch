@@ -26,9 +26,11 @@ function createColumn(){
             box.className = "box";
 
             //mouse over effect
+            let randomColor = Math.floor(Math.random()*16777215).toString(16);
             box.addEventListener("mouseover", function() {
-                box.style.background = 'blue';
-            })
+                box.style.background = "#" + randomColor;
+                color.innerHTML = "#" + randomColor;
+            })  
 
             column.appendChild(box);
         }
@@ -54,9 +56,11 @@ function createNewColumn(answer) {
             box.className = "box";
 
             //mouse over effect
+            let randomColor = Math.floor(Math.random()*16777215).toString(16);
             box.addEventListener("mouseover", function() {
-                box.style.background = 'blue';
-            })
+                box.style.background = "#" + randomColor;
+                color.innerHTML = "#" + randomColor;
+            })  
 
             column.appendChild(box);
         }
